@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "WebMD Scorch Plugin",
+  "version": "0.1.2",
+  "description": "DEVELOPMENT build with simple auto-reloader\n[2023-05-30 15:02:04] waiting for changes...",
+  "background": {
+    "service_worker": "service-worker.js",
+    "type": "module"
+  },
+  "action": {
+    "default_icon": {
+      "16": "img/scorch-icon.png",
+      "24": "img/scorch-icon.png",
+      "32": "img/scorch-icon.png"
+    },
+    "default_title": "WebMD Scorch Plugin",
+    "default_popup": "html/popup.html"
+  },
+  "icons": {
+    "16": "img/scorch-icon.png",
+    "128": "img/scorch-icon.png"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "contextMenus",
+    "notifications",
+    "storage",
+    "identity",
+    "identity.email"
+  ],
+  "host_permissions": [
+    "https://scorchapi.portal.webmd.com/*"
+  ]
+}

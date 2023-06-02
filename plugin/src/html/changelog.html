@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>WebMD Asset Browser Changelog</title>
+</head>
+<script defer src="../js/wslink.js"></script>
+<style>
+	body {
+		margin: 0 auto;
+		max-width: 1000px;
+	}
+
+	body > ul, .ws-link {
+		font-size: 1rem;
+		margin: 0;
+		padding: 0;
+	}
+
+	body > ul > li {
+		border-bottom: 1px solid gainsboro;
+		list-style-type: none;
+		padding-bottom: 1rem;
+	}
+
+	h3 {
+		align-items: center;
+		display: flex;
+		line-height: 1.5;
+	}
+
+	li span {
+		background: gainsboro;
+		border-radius: 4px;
+		display: inline-block;
+		font-size: 0.7rem;
+		font-weight: normal;
+		line-height: 1.8;
+		margin-left: 1rem;
+		padding: 0 0.5rem;
+		position: relative;
+		top: 1px;
+	}
+
+	li p {
+		margin: 0.3rem 0;
+	}
+
+</style>
+<body>
+<h1>WebMD Scorch Plugin Changelog</h1>
+<a target="_blank" class="ws-link">View in Chrome Web Store</a>
+<ul>
+	<li>
+		<h3>1.2 <span>Feb 26, 2020</span></h3>
+		<p>Adding support for scorch emails via API</p>
+	</li>
+	<li>
+		<h3>1.1 <span>Feb 20, 2020</span></h3>
+		<p>Adding new domains to list of scorchable paths:
+			<ul>
+				<li>js.webmd.com</li>
+				<li>js.preview.webmd.com</li>
+				<li>js.staging.webmd.com</li>
+				<li>css.preview.webmd.com</li>
+				<li>img.preview.webmd.com</li>
+			</ul>
+		</p>
+		<p>Adding context menu item for images (for 1-click scorch)</p>
+	</li>
+	<li>
+		<h3>1.0 <span>Jan 28, 2020</span></h3>
+		<p>Initial release</p>
+	</li>
+</ul>
+</body>
+</html>

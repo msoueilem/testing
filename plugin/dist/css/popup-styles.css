@@ -1,0 +1,78 @@
+body {
+    min-width: 400px;
+}
+
+.queue {
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+.queue ul, .active ul {
+    border-bottom: 1px solid lightgray;;
+    list-style-type: none;
+    margin: 0 0 0.5rem;
+    padding: 0.5rem 0;
+}
+
+.queue .total {
+    font-weight: normal;
+}
+
+.active li {
+    display: flex;
+}
+
+.host {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.filename {
+    display: inline-block;
+    margin-left: 0.5rem;
+}
+
+.active {
+    display: none;
+}
+
+.active ul.done .loader {
+    display: none;
+}
+
+.active ul.done .filename::after {
+    content: '\2713';
+    color: limegreen;
+    margin-left: 0.5rem;
+}
+
+.loader {
+    animation: spin 1s linear infinite;
+    border: 2px solid #f3f3f3; /* Light grey */
+    border-top: 2px solid #3498db; /* Blue */
+    border-radius: 50%;
+    display: inline-block;
+    height: 12px;
+    margin-left: 0.5rem;
+    width: 12px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.version {
+    float: right;
+}
+
+.version span {
+    color: #555555;
+}
+
+.version a {
+    color: inherit;
+}
